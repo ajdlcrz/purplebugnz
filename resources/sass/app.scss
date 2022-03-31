@@ -1,0 +1,77 @@
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// settings
+@import 'settings/fonts';
+
+// tools
+@import 'tools/colors';
+@import 'tools/padding';
+
+// elements
+@import './elements/e-input';
+@import './elements/e-button';
+@import './elements/e-breadcrumb';
+
+// components
+@import './components/c-nav';
+@import './components/c-footer';
+@import './components/c-banner';
+
+// pages
+@import './components/c-home';
+@import './components/c-about';
+@import './components/c-services';
+@import './components/c-service-inner';
+@import './components/c-blog-inner';
+@import './components/c-blogs';
+@import './components/c-contact';
+@import './components/c-team';
+@import './components/c-careers';
+@import './components/c-career-inner';
+@import './components/c-policy';
+
+[v-cloak] > * { display:none }
+[v-cloak]::before { content: "loading…" }
+
+body {
+    font-family: 'Gotham', sans-serif;
+}
+
+/* == == == ==  flickity styles == == == ==  */
+.flickity-slider {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-cell {
+    margin-right: 20px;
+}
+
+/* button color & size */
+.flickity-button {
+    background: #8a3d92;
+
+    &:hover {
+        background: #707070;
+    }
+}
+
+.flickity-prev-next-button {
+    width: 30px;
+    height: 30px;
+
+    /* position outside */
+    &.previous {
+        left: -40px;
+    }
+
+    &.next {
+        right: -40px;
+    }
+}
+
+/* icon color */
+.flickity-button-icon {
+    fill: white;
+}

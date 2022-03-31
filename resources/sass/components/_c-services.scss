@@ -1,0 +1,88 @@
+.c-services {
+    @include section-padding($bg-color: $bg-gray);
+
+    @media (max-width: 800px) {
+        padding-top: 2rem;
+    }
+}
+
+.c-services--title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+    font-size: 2.25em;
+    font-weight: 400;
+    color: $gray;
+}
+
+.c-services--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.c-services--card {
+    img {
+        width: auto;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+        color: $purple;
+        margin-bottom: 12px;
+    }
+
+    p {
+        color: $gray;
+        font-weight: 400;
+    }
+
+    @media (min-width: 680px) {
+        flex-basis: calc(50% - 20px);
+    }
+
+    @media (min-width: 1200px) {
+        flex-basis: calc(33.33% - 20px);
+    }
+}
+
+.c-servicesCard--body {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .card-title, .card-title {
+        flex-basis: 100%;
+    }
+
+    .card-text {
+        word-break: break-word;
+        font-size: 14px;
+    }
+}
+
+.c-serviceCard--buttons {
+    align-self: flex-end;
+    margin-top: 47px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    .btn {
+        flex: 1 1 50%;
+        border-radius: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

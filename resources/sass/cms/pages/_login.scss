@@ -1,0 +1,44 @@
+.cms-login {
+    background-color: $purple;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+
+    .card {
+        width: 80vw;
+        max-width: 700px;
+        border-radius: .80rem !important;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .form-control {
+                text-align: center;
+                width: 300px;
+                border-radius: 0.90rem !important;
+                border-color: $gray;
+            }
+
+            .is-invalid {
+                border-color: #dc3545;
+            }
+
+            button {
+                background-color: $purple;
+                border-radius: 15px !important;
+                border: none;
+                padding: 5px 18px;
+                font-size: .8em;
+                color: #f2f7fb;
+                background-color: $purple !important;
+                background: $purple !important;
+                padding: 8px 25px !important;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,137 @@
+@mixin iconProperties($width: 1.3rem, $height: 1.3rem) {
+    display: inline-block;
+    width:  $width;
+    height: $height;
+    vertical-align: middle;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &--sm {
+        width:  1rem;
+        height: 1rem;
+    }
+}
+
+.icon-addMore {
+    background-image: url('/cms-assets/icon-addmore.png');
+    @include iconProperties(10vh, 10vh);
+}
+
+.icon-addaccount {
+    background-image: url('/cms-assets/icon-addaccount.png');
+    @include iconProperties();
+}
+.icon-add {
+    background-image: url('/cms-assets/icon-add.png');
+    @include iconProperties();
+}
+.icon-view {
+    background-image: url('/cms-assets/icon-view.png');
+    @include iconProperties(1.5rem, 1.5rem);
+
+    &:hover {
+        background-image: url('/cms-assets/icon-view-alt.png');
+    }
+}
+.icon-edit {
+    background-image: url('/cms-assets/icon-edit.png');
+    @include iconProperties();
+}
+.icon-delete {
+    background-image: url('/cms-assets/icon-delete.png');
+    @include iconProperties();
+}
+
+.icon-remove {
+    background-image: url('/cms-assets/icon-remove.png');
+    @include iconProperties(2vh, 2vh);
+}
+.icon-eye {
+    background-image: url('/cms-assets/icon-eye.png');
+    @include iconProperties();
+}
+
+.icon-dashboard {
+    background-image: url('/cms-assets/sidebar-dashboard.png');
+    @include iconProperties($height: 1.5rem);
+}
+.icon-activities {
+    background-image: url('/cms-assets/sidebar-activities.png');
+    @include iconProperties($height: 1.5rem);
+}
+.icon-users {
+    background-image: url('/cms-assets/sidebar-users.png');
+    @include iconProperties($height: 1.5rem);
+}
+.icon-pages {
+    background-image: url('/cms-assets/sidebar-pages.png');
+    @include iconProperties($height: 1.5rem);
+}
+
+.icon-activities-alt {
+    background-image: url('/cms-assets/dashboard-activities-alt.png');
+    @include iconProperties(18px, 16px);
+}
+.icon-users-alt {
+    background-image: url('/cms-assets/dashboard-users-alt.png');
+    @include iconProperties(18px, 16px);
+}
+.icon-pages-alt {
+    background-image: url('/cms-assets/dashboard-pages-alt.png');
+    @include iconProperties(18px, 16px);
+}
+
+.icon-info {
+    background-image: url('/cms-assets/icon-info.png');
+    @include iconProperties($height: 1.5rem);
+}
+
+.icon-prev {
+    background-image: url('/cms-assets/icon-prev.png');
+    @include iconProperties(8px, 12px);
+}
+.icon-next {
+    background-image: url('/cms-assets/icon-next.png');
+    @include iconProperties(8px, 12px);
+}
+
+.icon-export {
+    background-image: url('/cms-assets/icon-export.png');
+    @include iconProperties(1rem, 1rem);
+}
+
+.icon-sort {
+    background-image: url('/cms-assets/icon-sort.png');
+    @include iconProperties(1rem, 1rem);
+}
+
+.icon-download {
+    background-image: url('/cms-assets/icon-download.png');
+    @include iconProperties(10px, 12px);
+}
+
+.icon-circle {
+    @include iconProperties(15px, 15px);
+    background-color: #28a745;
+    border-radius: 50%;
+
+    &--red {
+        background-color: #dc3545;
+    }
+}
+
+.icon-link {
+    background-image: url('/cms-assets/icon-link.png');
+    @include iconProperties();
+}
+
+.icon-reload {
+    background-image: url('/cms-assets/icon-reload.png');
+    @include iconProperties(1rem, 1rem);
+}
+
+.icon-logbit {
+    background-image: url('/cms-assets/dashboard-pages-alt.png');
+    @include iconProperties();
+}

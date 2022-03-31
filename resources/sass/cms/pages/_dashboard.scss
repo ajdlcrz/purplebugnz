@@ -1,0 +1,172 @@
+.dashboard {
+    margin-left: 90px;
+
+    .dashboard-header {
+        .title {
+            border-bottom: 1px solid $purple;
+            h1 {
+                font-size: 1.5em;
+                font-weight: 700;
+                color: $purple;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    // Start Activity Logs
+    .recent-activities {
+        padding-bottom: 10px;
+        border-bottom: 1px solid $purple;
+        .title-viewmore {
+            h2 {
+                font-size: 1.3em;
+                color: $black;
+            }
+            a {
+                line-height: 2;
+                margin-left: auto;
+                font-size: .8em;
+                color: $purple;
+                text-decoration: none;
+            }
+        }
+        .table {
+            table-layout: fixed;
+
+            tbody {
+                tr {
+                    border-bottom: 1px solid $gray;
+                    td {
+                        padding-left: unset !important;
+                        padding-right: unset !important;
+                        border-top: none !important;
+                        font-size: .8em;
+                        &:first-child {
+                            color: $purple;
+                        }
+                        &:nth-child(2) {
+                            color: $black;
+                        }
+                        &:nth-child(3) {
+                            color: $black;
+                        }
+                        &:nth-child(4) {
+                            color: $black;
+                        }
+                    }
+                    &:last-child {
+                        border-bottom: none !important;
+                    }
+                }
+            }
+        }
+    }
+    // End Activity Logs
+
+    // Start Recently Added Users
+    .recent-users {
+        padding-bottom: 10px;
+        border-bottom: 1px solid $purple;
+        .title-viewmore {
+            h2 {
+                font-size: 1.3em;
+                color: $black;
+            }
+            a {
+                line-height: 2;
+                margin-left: auto;
+                font-size: .8em;
+                color: $purple;
+                text-decoration: none;
+            }
+        }
+        .table {
+            table-layout: fixed;
+
+            tbody {
+                tr {
+                    border-bottom: 1px solid $gray;
+                    td {
+                        padding-left: unset !important;
+                        padding-right: unset !important;
+                        border-top: none !important;
+                        font-size: .8em;
+                        span {
+                            color: $black;
+                        }
+                        &:first-child {
+                            color: $purple;
+                        }
+                        &:nth-child(2) {
+                            color: $black;
+                        }
+                        &:nth-child(3) {
+                            color: $black;
+                        }
+                        &:nth-child(4) {
+                            color: $black;
+                        }
+                        &:nth-child(4) {
+                            color: $black;
+                        }
+                        &:nth-child(5) {
+                            color: $black;
+                        }
+                    }
+                    &:last-child {
+                        border-bottom: none !important;
+                    }
+                }
+            }
+        }
+    }
+    // End Recently Added Users
+
+    // Start Recently Added Pages
+    .recent-pages {
+        padding-bottom: 10px;
+        .title-viewmore {
+            h2 {
+                font-size: 1.3em;
+                color: $black;
+            }
+            a {
+                line-height: 2;
+                margin-left: auto;
+                font-size: .8em;
+                color: $purple;
+                text-decoration: none;
+            }
+        }
+        .table {
+            table-layout: fixed;
+
+            tbody {
+                tr {
+                    border-bottom: 1px solid $gray;
+                    td {
+                        padding-left: unset !important;
+                        padding-right: unset !important;
+                        border-top: none !important;
+                        font-size: .8em;
+                        &:first-child {
+                            color: $purple;
+                        }
+                        &:nth-child(2) {
+                            color: $black;
+                        }
+                        &:nth-child(3) {
+                            color: $black;
+                        }
+                        &:nth-child(4) {
+                            color: $black;
+                        }
+                    }
+                    &:last-child {
+                        border-bottom: none !important;
+                    }
+                }
+            }
+        }
+    }
+    // End Recently Added Pages
+}

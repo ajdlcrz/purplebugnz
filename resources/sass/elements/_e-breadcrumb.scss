@@ -1,0 +1,21 @@
+.inner-page-breadcrumb {
+    color: $purple;
+    margin-bottom: 10px;
+    display: flex;
+
+    .breadcrumb-link {
+        color: $purple;
+        padding: 0 10px;
+        border-left: 2px solid $purple;
+        line-height: 1;
+
+        &:first-child {
+            border-left: none;
+            padding-left: 0;
+        }
+
+        &:hover {
+            color: $purple;
+        }
+    }
+}

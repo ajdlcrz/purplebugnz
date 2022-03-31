@@ -1,0 +1,31 @@
+.cms-faqs {
+    .card-header {
+        background-color: $purple;
+        padding: 0.2rem 1.25rem;
+    }
+
+    .btn-link {
+        color: #fff;
+        text-decoration: none;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .card:nth-of-type(even) {
+        border-bottom: 1px solid #00000020;
+
+        .card-header {
+            background-color: #8a3d92c9 !important;
+        }
+
+        .btn-link {
+            font-weight: 500;
+        }
+    }
+
+    img {
+        max-width: 100%;
+    }
+}

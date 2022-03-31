@@ -1,0 +1,76 @@
+.c-banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: 1000px) {
+        padding: 0px 10%;
+    }
+
+    @media (max-width: 800px) {
+        background-image: none !important;
+
+        img {
+            display: block !important;
+            width: 100%;
+        }
+    }
+}
+
+.c-bannerWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 30px;
+    // padding: 5% 0;
+    color: $white;
+    font-weight: 400;
+    max-width: 600px;
+
+    .c-banner--tag {
+        font-size: 20px;
+    }
+
+    .c-banner--title {
+        font-size: 5vw;
+        color: $white;
+        line-height: 1;
+        font-weight: 400!important;
+        margin-bottom: 1rem!important;
+    }
+
+    .c-banner--subtitle {
+        font-size: 16px;
+        // white-space: pre-wrap;
+        text-align: justify;
+        word-break: break-word;
+    }
+
+    @media (min-width: 1400px) {
+        max-width: 800px;
+    }
+
+    @media (min-width: 801px) {
+        min-height: 50vh;
+    }
+
+    @media (max-width: 800px) {
+        color: $gray;
+        height: 100%;
+        margin: 0;
+        padding: 48px 5%;
+        padding-bottom: 5px !important;
+
+        .c-banner--tag, .c-banner--title {
+            color: $purple;
+        }
+
+        .c-banner--title {
+            font-size: 2rem;
+        }
+
+        .c-banner--subtitle {
+            text-align: left;
+        }
+    }
+}

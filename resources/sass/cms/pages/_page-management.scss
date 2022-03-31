@@ -1,0 +1,55 @@
+.page-management {
+    margin-left: 90px;
+
+    .content {
+        hr {
+            border-top: 1px solid $purple !important;
+        }
+    }
+}
+
+.pages-container {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(115px, 1fr));
+    grid-gap: 20px;
+
+    .card {
+        border-radius: 1rem !important;
+        background: $white !important;
+        text-decoration: none;
+
+        .card-body {
+            padding: 0;
+            min-height: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            .page-logo {
+                height: 50px;
+                display: flex;
+                align-items: center;
+            }
+
+            .page-name {
+                text-align: center;
+
+                h2 {
+                    color: $black;
+                    font-size: .8em;
+                }
+            }
+        }
+    }
+}
+
+.footer-links-container {
+    .btn-light {
+        background-color: #fff;
+        border-color: #70707033;
+        padding: 15px 30px;
+        border-radius: 12px;
+    }
+}

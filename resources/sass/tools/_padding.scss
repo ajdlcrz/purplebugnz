@@ -1,0 +1,8 @@
+@mixin section-padding($p-y: 112px, $bg-color: #fff) {
+    padding: $p-y 5%;
+    background-color: $bg-color;
+
+    @media (min-width: 1000px) {
+        padding: $p-y 10%;
+    }
+}

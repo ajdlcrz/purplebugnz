@@ -1,0 +1,122 @@
+.c-blogs {
+    color: $gray;
+}
+
+.c-blog {
+    background-color: #fff;
+    display: flex;
+    gap: 20px;
+    padding: 11px;
+
+    .c-blog--img {
+        display: flex;
+        align-items: center;
+        flex: 1 1 67%;
+
+        img {
+            display: block;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+          }
+    }
+
+    .c-blog--body {
+        flex: 1 1 50%;
+    }
+}
+
+.c-blog--body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+
+    .c-blog--tag {
+        color: #ACACAC;
+    }
+
+    .c-blog--title {
+        font-weight: 600;
+    }
+    .c-title-blog {
+        color: #8a3d92;
+        line-height: 1.2;
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .c-blog--tag, .c-blog--title {
+        flex-basis: 100%;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+        color: $purple;
+    }
+
+    p {
+        color: $gray;
+    }
+
+    &-bottom {
+        align-self: flex-end;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .btn-outline-secondary{
+            // align-self: flex-end;
+            // margin-top: 10px;
+            border-radius: 0;
+            white-space: nowrap;
+        }
+    }
+}
+
+.c-blogs-latest {
+    @include section-padding($p-y: 100px);
+
+    @media (max-width: 900px) {
+        .c-blog {
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 800px) {
+        padding-top: 2rem;
+    }
+}
+
+.c-blog-recent {
+    @include section-padding($bg-color: $bg-gray);
+}
+
+.c-blogsRecent--wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: $gray;
+
+    .c-blog--tag, .c-blog--details, .c-blog--date {
+        font-size: 12px;
+    }
+
+    @media (min-width: 500px) {
+        .c-blog {
+            flex: 0 0 calc(50% - 10px);
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .c-blog {
+            flex-direction: column;
+
+            .c-blog--img {
+                img {
+                    height: 300px;
+                }
+            }
+        }
+    }
+}

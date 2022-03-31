@@ -1,0 +1,64 @@
+.cms-applicants {
+
+    .applicant-filters {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px 0;
+
+        .applicant-status {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $purple;
+            min-height: 60px;
+            font-weight: 500;
+            color: $purple;
+            text-align: center;
+            text-transform: capitalize;
+            cursor: pointer;
+
+            &.active {
+                color: $white;
+                background-color: $purple;
+            }
+        }
+    }
+}
+
+.applicant-modal {
+    .modal-content {
+        border-radius: 0.85rem;
+        padding: 0 30px;
+
+        .border-purple {
+            border-color: $purple !important;
+        }
+
+        .modal-header {
+            padding: 20px 0 10px;
+            color: purple;
+        }
+
+        .modal-body {
+            padding: 16px 0 40px;
+            color: $gray;
+            font-size: 14px;
+            font-weight: 700;
+
+            .right-side {
+                color: #495057;
+            }
+
+            .btn-download {
+                min-width: 0px;
+                font-size: 10px;
+            }
+
+            .applicant-resume {
+                color: #8a3d92
+            }
+
+        }
+    }
+}

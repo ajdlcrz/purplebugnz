@@ -1,0 +1,49 @@
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// settings
+@import 'settings/fonts';
+
+// tools
+@import 'tools/colors';
+
+// elements
+@import './elements/e-button';
+@import './elements/e-icons';
+@import './elements/e-switch';
+
+// components
+@import 'cms/components/navbar';
+@import 'cms/components/sidebar';
+@import 'cms/components/table';
+@import 'cms/components/confirm-delete-modal';
+@import 'cms/components/header-title';
+@import 'cms/components/seo-form';
+
+// pages
+@import 'cms/pages/login.scss';
+@import 'cms/pages/faqs';
+@import 'cms/pages/dashboard';
+@import 'cms/pages/activity-logs';
+@import 'cms/pages/user-management';
+@import 'cms/pages/page-management';
+@import 'cms/pages/cms-page';
+@import 'cms/pages/homepage';
+@import 'cms/pages/applicants';
+@import 'cms/pages/jobs-management';
+
+[v-cloak] > * { display:none }
+[v-cloak]::before { content: "loading" }
+
+body {
+    font-family: 'Gotham', sans-serif;
+}
+
+main {
+    padding-top: 60px;
+}
+
+// Global
+.mt-custom {
+    margin-top: 80px;
+}

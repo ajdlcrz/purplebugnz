@@ -1,0 +1,16 @@
+.cms-page-wrapper {
+    display: grid;
+}
+
+.cms-page {
+    // max-width: 80vw;
+    margin-left: 65px;
+    place-self: center;
+    width: 80vw;
+    padding-top: 24px;
+    margin-bottom: 48px;
+
+    @media (min-width: 1000px) {
+        margin-left: 0;
+    }
+}

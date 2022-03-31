@@ -1,0 +1,41 @@
+.sidebar {
+    height: 100%;
+    width: 63px;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    background: $purple;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 65px;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            padding: 15px 20px;
+
+            a {
+                text-decoration: none;
+                font-size: .9em;
+                color: #fff;
+                display: block;
+                transition: 0.3s;
+                white-space: nowrap;
+            }
+
+            &:hover {
+                background: #ffffff29;
+            }
+
+            &.active {
+                background-color: #eeeeee4d;
+            }
+        }
+    }
+}
+.full-side-bar-menus {
+    width: 250px !important;
+}

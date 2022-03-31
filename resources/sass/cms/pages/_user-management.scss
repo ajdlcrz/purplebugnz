@@ -1,0 +1,68 @@
+.user-management {
+    margin-left: 90px;
+
+    // Start header
+    .user-management-header {
+        .title {
+            h1 {
+                font-size: 1.5em;
+                font-weight: 700;
+                color: $purple;
+            }
+        }
+        .right-side {
+            margin-left: auto;
+            ul {
+                padding: unset;
+                display: inline-flex;
+                width: 100%;
+                margin-bottom: unset;
+
+                li {
+                    padding: 10px 15px;
+                    list-style: none;
+                    a {
+                        font-size: .9em;
+                        color: $purple;
+                        text-decoration: unset;
+                    }
+                }
+            }
+        }
+    }
+    // End header
+
+    // Start Modal
+    .user-modal {
+        .modal-dialog {
+            max-width: 600px;
+            .modal-content {
+                border-radius: 0.85rem;
+                .modal-body {
+                    padding: 1.5rem 1rem;
+                    .title {
+                        h3 {
+                            color: $purple;
+                            font-size: 1.5em;
+                        }
+                    }
+
+                    hr {
+                        border-top: 1px solid $purple;
+                    }
+
+                    form {
+                        .button-modal {
+                            margin-top: 35px;
+                            .btn-link{
+                                text-decoration: none !important;
+                                color: $gray;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // End Modal
+}

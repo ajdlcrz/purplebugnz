@@ -1,0 +1,76 @@
+.c-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 40px 20px 120px;
+    background-color: $bg-gray;
+    color: $gray;
+    font-weight: 400;
+
+    @media (max-width: 1000px) {
+        .c-contact--inquire {
+            max-width: 50%;
+        }
+    }
+
+    @media (max-width: 640px) {
+        gap: 20px;
+
+        .c-contact--details {
+            text-align: center;
+            max-width: 100%;
+            order: 2;
+            flex-basis: 100%;
+        }
+
+        .c-contact--inquire {
+            order: 1;
+            max-width: 100%;
+            flex-basis: 100%;
+        }
+    }
+}
+
+.c-contact--details {
+    flex: 1 1 50%;
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+
+    h1,h2,h3,h4,h5,h6 {
+        color: $purple;
+        font-weight: 600;
+    }
+
+    div {
+        margin-bottom: 20px;
+    }
+}
+
+.c-contact--inquire {
+    flex: 1 1 50%;
+    max-width: 30%;
+    background-color: #fff;
+    padding: 30px 40px;
+    h1,h2,h3,h4,h5,h6 {
+        font-weight: 400;
+    }
+    .inquire-get-in-touch {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    label {
+        font-size: 12px;
+    }
+
+    .btn {
+        border-radius: 0;
+    }
+
+    .btn-purple {
+        background-color: $purple;
+        color: #fff;
+        font-size: 12px;
+    }
+
+}

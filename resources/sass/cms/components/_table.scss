@@ -1,0 +1,114 @@
+.cms-table-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $purple;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+
+    .table-title {
+        display: flex;
+        gap: 5px;
+        color: $purple;
+    }
+
+    .table-buttons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        a, .headerBtn {
+            color: $purple;
+            text-decoration: unset;
+        }
+    }
+}
+
+.cms-table {
+    thead {
+        tr {
+            background: $bg-gray;
+            th {
+                border-bottom: unset !important;
+                border-top: unset !important;
+                font-size: .9em;
+                color: $black;
+            }
+        }
+    }
+    tbody {
+        tr {
+            border-bottom: 2px solid #70707059;
+            td {
+                border-top: unset !important;
+                font-size: .8em;
+                word-break: break-word;
+
+                &.title {
+                    max-width: 150px;
+                    word-break: break-word;
+                }
+
+                &:first-child {
+                    color: $light-purple;
+                    font-weight: 700;
+                    max-width: 150px;
+                }
+                &:nth-child(2) {
+                    color: $light-purple;
+                    font-weight: 700;
+                    max-width: 150px;
+                }
+                &.description, &:nth-child(4) {
+                    max-width: 250px;
+                    word-break: break-word;
+                }
+            }
+
+            .cms-action-items {
+                display: flex;
+                flex-wrap: wrap;
+                min-width: 120px;
+
+                .btn-link {
+                    color: $purple;
+                }
+            }
+        }
+    }
+}
+
+.pagination-container {
+    nav {
+        width: fit-content;
+        margin-left: auto;
+        .pagination {
+            .page-item {
+                margin: 0px 2px;
+                .page-link {
+                    color: $purple;
+                    font-size: .9em;
+                    border: 1px solid $purple;
+                    padding: 0.2rem 0.55rem !important;
+                }
+                .prev {
+                    color: $purple;
+                    font-size: .9em;
+                    border: unset !important;
+                }
+                .next {
+                    color: $purple;
+                    font-size: .9em;
+                    border: unset !important;
+                }
+            }
+
+            .active {
+                .page-link {
+                    background-color: $purple;
+                    color: $white !important;
+                }
+            }
+        }
+
+    }
+}

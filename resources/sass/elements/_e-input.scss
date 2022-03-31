@@ -1,0 +1,10 @@
+.e-input {
+    border: 2px solid #ACACAC;
+    border-width: 0 0 2px;
+    border-radius: 0;
+    padding: 0;
+
+    &--select {
+        background-position: right calc(1em + .1875rem) center !important
+    }
+}

@@ -1,0 +1,54 @@
+.c-nav {
+    background-color: #fff;
+}
+
+.c-nav-flagDivider {
+    border-right: 2px solid rgb(192, 189, 189);
+}
+
+.c-nav--linksWrap {
+    display: flex;
+    flex-direction: column;
+
+    .nav-item {
+        text-align: center;
+
+        &.active {
+            font-weight: 500;
+
+            .nav-link {
+                color: $purple;
+            }
+        }
+    }
+
+    @media (max-width: 990px) {
+        .c-nav--links {
+            order: 1;
+
+            .nav-item {
+                text-align: left;
+
+                &:active {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .c-nav--flags {
+            order: 2;
+            margin-left: 0;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+
+    }
+}
+
+.c-nav--flags {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    width: 25%;
+    margin-left: auto;
+}

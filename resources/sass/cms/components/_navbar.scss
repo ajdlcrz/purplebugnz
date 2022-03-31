@@ -1,0 +1,59 @@
+.cms-navbar {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    .cms-nav-btn-toggler {
+        background: transparent;
+        border: none;
+        .cms-navbar-burger {
+            background-image: url('/cms-assets/navbar-burger.png');
+            content: "";
+            display: inline-block;
+            width: 1.3em;
+            height: 1.5em;
+            vertical-align: middle;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        &:focus {
+            outline: none !important;
+        }
+    }
+    .navbar-brand {
+        img {
+            max-width: 140px;
+            height: auto;
+        }
+    }
+    .navbar-nav {
+        font-size: .9em;
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+
+            .cms-nav-username {
+                color: $purple;
+            }
+
+            .cms-navbar-user {
+                background-image: url('/cms-assets/navbar-user.png');
+                content: "";
+                display: inline-block;
+                width: 2rem;
+                height: 2rem;
+                vertical-align: middle;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+            .cms-nav-user-image {
+                width: 1.3rem;
+                height: 1.5rem;
+                margin-left: 10px;
+            }
+        }
+    }
+}

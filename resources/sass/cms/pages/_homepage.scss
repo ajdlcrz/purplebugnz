@@ -1,0 +1,110 @@
+.homepage {
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 8px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 8px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    .edit--section {
+        overflow: scroll;
+        overflow-x: hidden;
+        border: 1px solid $gray;
+        border-radius: 8px;
+        padding: 20px;
+    }
+
+    .banners-section {
+        max-height: 60vh;
+
+        .banners-container {
+            display: grid;
+            grid-auto-rows: 1fr;
+        }
+
+        .banner-content {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+
+            .banner-img {
+                flex: 1 1 50%;
+                max-height: 427px;
+            }
+
+            .card-body {
+                flex: 1 1 50%;
+            }
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: transparent;
+            border-top: 0;
+        }
+    }
+
+    .partners-section {
+        max-height: 60vh;
+
+        .edit-partnersBody {
+            max-width: 40vw;
+        }
+
+        .partners-container {
+            display: grid;
+            grid-auto-rows: 1fr;
+        }
+
+        .partner-image {
+            height: 100%;
+            background-color: $bg-gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .partnerUpload {
+            color: $gray;
+        }
+    }
+
+    .why-section {
+        overflow: unset;
+        overflow-x: unset;
+
+        .why-background {
+            height: 100%;
+            max-height: 250px;
+            background-color: gray;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: transparent;
+            border-top: 0;
+        }
+    }
+
+    .card-addMore {
+        height: 100%;
+        border: 10px solid $purple;
+    }
+}
