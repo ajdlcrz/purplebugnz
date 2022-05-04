@@ -24,9 +24,9 @@
                 <a class="nav-link" data-toggle="tab" href="#subsidiaries">Purplebug Subsidiaries</a>
             </li>
 
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a class="nav-link" href="/our-team">Our Team</a>
-            </li>
+            </li> --}}
         </ul>
 
         <!-- Tab panes -->

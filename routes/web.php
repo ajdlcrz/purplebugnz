@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/about-us', 'AboutController@about');
-Route::get('/our-team', 'TeamController@team');
+// Route::get('/our-team', 'TeamController@team');
 Route::get('/search', 'HomeController@search');
 Route::get('/searchList', 'HomeController@searchList');
 
@@ -13,14 +13,14 @@ Route::get('/service/{service:slug}', 'ServiceController@service');
 Route::post('/service/inquire', 'InquiryController@serviceInquire');
 Route::post('/service/influencer-register', 'InquiryController@storeInfluencer');
 
-Route::get('/blogs-list', 'BlogController@blogsList');
-Route::get('/blogs', 'BlogController@blogs')->name('blogs.landing');
-Route::get('/blog/{blog:slug}', 'BlogController@blog')->name('blogs.inner');
+// Route::get('/blogs-list', 'BlogController@blogsList');
+// Route::get('/blogs', 'BlogController@blogs')->name('blogs.landing');
+// Route::get('/blog/{blog:slug}', 'BlogController@blog')->name('blogs.inner');
 
-Route::get('/insights-list', 'InsightController@insightslist');
-Route::get('/insights', 'InsightController@insights')->name('insights.landing');
-Route::get('/insight/{insight:slug}', 'InsightController@insight')->name('insights.inner');
-Route::post('/insight/insight-inquire', 'InsightInquiryController@inquire')->name('insight.inquire');
+// Route::get('/insights-list', 'InsightController@insightslist');
+// Route::get('/insights', 'InsightController@insights')->name('insights.landing');
+// Route::get('/insight/{insight:slug}', 'InsightController@insight')->name('insights.inner');
+// Route::post('/insight/insight-inquire', 'InsightInquiryController@inquire')->name('insight.inquire');
 
 Route::get('/contact-us', 'ContactController@contact');
 Route::post('/inquire', 'InquiryController@inquire')->name('inquire');

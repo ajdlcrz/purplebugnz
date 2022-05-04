@@ -48,7 +48,7 @@
     </div>
 
     <div class="c-services">
-        <div class="c-services--title">Whatt We Offer</div>
+        <div class="c-services--title">What We Offer</div>
 
         <div class="c-services--wrapper">
             @foreach ($services as $service)

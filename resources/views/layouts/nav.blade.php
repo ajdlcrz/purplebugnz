@@ -39,13 +39,13 @@
                         <a class="nav-link" href="{{ url('careers') }}">Careers</a>
                     </li>
 
-                    <li class="nav-item {{ (request()->is('blogs*') | request()->is('blog*')) ? 'active' : '' }}">
+                    {{-- <li class="nav-item {{ (request()->is('blogs*') | request()->is('blog*')) ? 'active' : '' }}">
                         <a class="nav-link" href="{{ url('blogs') }}">Blogs</a>
                     </li>
 
                     <li class="nav-item {{ (request()->is('insights*') | request()->is('insight*')) ? 'active' : '' }}">
                         <a class="nav-link" href="{{ url('insights') }}">Insights</a>
-                    </li>
+                    </li> --}}
 
                     <li class="nav-item {{ (request()->is('contact-us')) ? 'active' : '' }}">
                         <a class="nav-link" href="{{ url('contact-us') }}">Contact Us</a>
