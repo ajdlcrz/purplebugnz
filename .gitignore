@@ -18,5 +18,5 @@ package-lock.json
 /contract-tracket
 *.zip
 error_log
-.htaccess
+
 *.sql
