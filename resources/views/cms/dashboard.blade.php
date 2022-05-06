@@ -67,7 +67,7 @@
                 {{-- End Recently Added Users --}}
 
                 {{-- Start Recently Added Pages --}}
-                <div class="recent-pages mb-5">
+                {{-- <div class="recent-pages mb-5">
                     <div class="title-viewmore d-flex mb-3">
                         <h2><span class="icon-pages-alt"></span> Recently Added Blogs</h2>
                         <a href="{{ route("blogs.index") }}">View More</a>
@@ -87,7 +87,7 @@
                             @endforeach
                         </tbody>
                     </table>
-                </div>
+                </div> --}}
                 {{-- End Recently Added Pages --}}
             </div>
         </div>

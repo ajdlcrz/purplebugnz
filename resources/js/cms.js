@@ -29,7 +29,7 @@ Vue.component('activity-logs', require('./cms/pages/ActivityLogs').default);
 Vue.component('user-management', require('./cms/pages/UserManagement').default);
 Vue.component('homepage', require('./cms/pages/Homepage').default);
 Vue.component('about', require('./cms/pages/About').default);
-Vue.component('teams', require('./cms/pages/Teams').default);
+// Vue.component('teams', require('./cms/pages/Teams').default);
 Vue.component('contact', require('./cms/pages/Contact').default);
 Vue.component('footer-links', require('./cms/pages/FooterLinks').default);
 

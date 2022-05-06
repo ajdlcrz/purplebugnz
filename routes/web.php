@@ -106,27 +106,27 @@ Route::prefix('cms')->group(function () {
             });
 
             // == == == == BLOGS & CATEGORIES == == == ==
-            Route::middleware(['blogs_access'])->group(function () {
-                Route::get('categories-list', 'CategoryController@categoryLists');
-                Route::resource('categories', 'CategoryController')->only(['store', 'update', 'destroy']);
+            // Route::middleware(['blogs_access'])->group(function () {
+            //     Route::get('categories-list', 'CategoryController@categoryLists');
+            //     Route::resource('categories', 'CategoryController')->only(['store', 'update', 'destroy']);
 
-                Route::get('blogs/edit/{blog}', 'BlogController@editBlog');
-                Route::get('blogs-contents', 'BlogController@getContents');
-                Route::get('blogs/records', 'BlogController@records');
-                Route::resource('blogs', 'BlogController')->except(['show']);
-            });
+            //     Route::get('blogs/edit/{blog}', 'BlogController@editBlog');
+            //     Route::get('blogs-contents', 'BlogController@getContents');
+            //     Route::get('blogs/records', 'BlogController@records');
+            //     Route::resource('blogs', 'BlogController')->except(['show']);
+            // });
 
             // == == == == INSIGHTS == == == ==
-            Route::middleware(['insights_access'])->group(function () {
-                Route::get('insights/edit/{insight}', 'InsightController@editInsight');
-                Route::get('insights-contents', 'InsightController@getContents');
-                Route::get('insights/records', 'InsightController@records');
-                Route::resource('insights', 'InsightController')->except(['show']);
-                //INSIGHT INQUIRY
-                Route::get('insights-report', 'InsightController@index');
-                Route::get('insights-report/fetch', 'InsightController@getInsightRecord');
-                Route::get('insights-report/export/{column}/{order}', 'InsightController@exportToExcel');
-            });
+            // Route::middleware(['insights_access'])->group(function () {
+            //     Route::get('insights/edit/{insight}', 'InsightController@editInsight');
+            //     Route::get('insights-contents', 'InsightController@getContents');
+            //     Route::get('insights/records', 'InsightController@records');
+            //     Route::resource('insights', 'InsightController')->except(['show']);
+            //     //INSIGHT INQUIRY
+            //     Route::get('insights-report', 'InsightController@index');
+            //     Route::get('insights-report/fetch', 'InsightController@getInsightRecord');
+            //     Route::get('insights-report/export/{column}/{order}', 'InsightController@exportToExcel');
+            // });
 
             // == == == == CAREERS == == == ==
             Route::middleware(['careers_access'])->group(function () {
@@ -148,19 +148,19 @@ Route::prefix('cms')->group(function () {
             });
 
             // == == == == OUR TEAMS == == == ==
-            Route::middleware(['teams_access'])->group(function () {
-                Route::get('our-teams', 'TeamController@index')->name('page.teams');
-                Route::get('teams-contents', 'TeamController@getContents');
-                Route::put('our-teams/{section}', 'TeamController@updateContent');
+            // Route::middleware(['teams_access'])->group(function () {
+            //     Route::get('our-teams', 'TeamController@index')->name('page.teams');
+            //     Route::get('teams-contents', 'TeamController@getContents');
+            //     Route::put('our-teams/{section}', 'TeamController@updateContent');
 
-                Route::post('our-teams/add-photo', 'TeamController@addPhoto');
-                Route::delete('our-teams/{photo}/delete-photo', 'TeamController@deletePhoto');
-                Route::get('our-teams/photos', 'TeamController@listPhotos');
+            //     Route::post('our-teams/add-photo', 'TeamController@addPhoto');
+            //     Route::delete('our-teams/{photo}/delete-photo', 'TeamController@deletePhoto');
+            //     Route::get('our-teams/photos', 'TeamController@listPhotos');
 
-                Route::get('our-teams/employees', 'TeamController@employees');
-                Route::patch('our-teams/updateAllEmployees', 'TeamController@updateAllEmployees');
-                Route::resource('employees', 'TeamController')->only(['store', 'update', 'destroy']);
-            });
+            //     Route::get('our-teams/employees', 'TeamController@employees');
+            //     Route::patch('our-teams/updateAllEmployees', 'TeamController@updateAllEmployees');
+            //     Route::resource('employees', 'TeamController')->only(['store', 'update', 'destroy']);
+            // });
 
             // == == == == CONTACT US == == == ==
             Route::middleware(['contacts_access'])->group(function () {
