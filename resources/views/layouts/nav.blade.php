@@ -11,7 +11,7 @@
         <div class="navbar-collapse collapse" id="navbar">
             <div class="ml-auto c-nav--linksWrap">
                 <div class="c-nav--flags">
-                    <a href="{{ route('home') }}">
+                    <a href="https://purplebug.net/">
                         <img src="{{ asset('img/flag-ph.svg') }}" height="15" alt="PH flag">
                     </a>
 
